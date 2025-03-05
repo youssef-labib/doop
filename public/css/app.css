@@ -1,4 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+/* header style by youssef */
+
+/* first section by yahya */
+
+/* second section by yahya */
+
+/* third section by yahya */
+
+/* footer style by youssef */
+
+@media (max-width: 480px) {
+    /* header style by youssef - responsive */
+
+    /* first section by yahya - responsive */
+
+    /* second section by yahya - responsive */
+
+    /* third section by yahya - responsive */
+
+    /* footer style by youssef - responsive */
 }
