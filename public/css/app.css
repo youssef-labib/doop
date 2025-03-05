@@ -1,11 +1,65 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Lato", sans-serif;
 }
 
 /* header style by youssef */
 
 /* first section by yahya */
+.a-first-section{
+    display: flex;
+    width: 100%;
+    padding: 5vh 10vw;
+    gap: 3vw;
+}
+.a-first-section>.a-left-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.a-first-section>.a-left-content>h1{
+    font-weight: bold;
+    font-size: 4em;
+    text-transform: capitalize;
+    color: rgb(39, 70, 132);
+}
+.a-first-section>.a-left-content>p{
+    font-size: 1em;
+    text-transform: capitalize;
+    color: rgba(39, 70, 132, 0.418);
+}
+.a-first-section>.a-left-content>.a-buttons{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+.a-first-section>.a-left-content>.a-buttons>button{
+    padding: 2vh 2.5vw;
+    border-radius: 30px;
+    border: none;
+    transition: 0.5s;
+}
+.a-first-section>.a-left-content>.a-buttons>button:nth-child(1){
+    background-color: rgb(255, 18, 47);
+    color: white;
+}
+.a-first-section>.a-left-content>.a-buttons>button:nth-child(1):hover{
+    scale: 105%;
+}
+.a-first-section>.a-left-content>.a-buttons>button:nth-child(2){
+    background-color: white;
+    color: black;
+}
+.a-first-section>.a-left-content>.a-buttons>button:nth-child(2):hover{
+    background-color: rgb(255, 0, 30);
+    color: white;
+    scale: 105%;
+}
+.a-first-section>.a-right-content{
+    width: 50%;
+}
 
 /* second section by yahya */
 
@@ -17,7 +71,35 @@
     /* header style by youssef - responsive */
 
     /* first section by yahya - responsive */
-
+    .a-first-section{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .a-first-section>.a-left-content{
+        width: 100%;
+        text-align: center;
+    }
+    .a-first-section>.a-left-content>h1{
+        font-size: 3em;
+    }
+    .a-first-section>.a-left-content>p{
+        font-size: 0.9em;
+    }
+    .a-first-section>.a-left-content>.a-buttons{
+        flex-direction: column;
+        gap: 1.5vh;
+        width: 100%;
+    }
+    .a-first-section>.a-left-content>.a-buttons>button{
+        padding: 2vh 10vw;
+    }
+    .a-first-section>.a-right-content{
+        width: 100%;
+    }
+    .a-first-section>.a-right-content>img{
+        width: 100%;
+    }
     /* second section by yahya - responsive */
 
     /* third section by yahya - responsive */
