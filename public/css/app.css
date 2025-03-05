@@ -6,6 +6,47 @@
 
 /* header style by youssef */
 
+.f-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding-top: 2.5rem;
+}
+
+.f-navbar>img {
+    width: 5.3rem;
+    height: 2.2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2rem;
+}
+
+nav>a {
+    text-decoration: none;
+    color: #314584;
+    font-weight: 650;
+    letter-spacing: 0.6px;
+}
+
+.f-home {
+    color: #ff3946;
+}
+
+nav>button {
+    color: #ff3946;
+    background-color: rgb(253, 253, 253);
+    border: none;
+    border-radius: 1px;
+    width: 8.5rem;
+    height: 2.8rem;
+    padding-left: 3.5rem;
+}
+
 /* first section by yahya */
 .a-first-section{
     display: flex;
@@ -117,8 +158,82 @@
 
 /* footer style by youssef */
 
+/* header responsive - desktop edit */
+
+#menu,
+label {
+    display: none;
+}
+
+.close,
+.open {
+    display: none;
+}
+
 @media (max-width: 480px) {
     /* header style by youssef - responsive */
+
+    header {
+        padding: 0 0;
+        width: 100%;
+    }
+
+    .f-navbar {
+        gap: 15.5rem;
+        padding-top: 1.4rem;
+    }
+
+    .label,
+    .close {
+        display: block;
+    }
+
+    .f-navbar>nav>label {
+        display: block;
+    }
+
+    .open {
+        display: block;
+    }
+
+    .f-navbar>nav>a {
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu:checked~nav {
+        right: 0;
+    }
+
+    nav {
+        background-color: #353535;
+        position: fixed;
+        width: 85%;
+        height: 100vh;
+        right: -200%;
+        top: 0;
+        transition: 0.5s;
+        flex-direction: column;
+        align-items: start;
+        gap: 5vh !important;
+        padding: 5vw !important;
+    }
+
+    #menu:checked~.close {
+        display: block;
+    }
+
+    .close {
+        align-self: end;
+    }
+
+    nav>button {
+        display: none;
+    }
 
     /* first section by yahya - responsive */
     .a-first-section{
