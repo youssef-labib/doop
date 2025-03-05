@@ -45,7 +45,7 @@
     background-color: rgb(255, 18, 47);
     color: white;
 }
-.a-first-section>.a-left-content>.a-buttons>button:nth-child(1):hover{
+.a-first-section>.a-left-content>.a-buttons>button:nth-child(1):hover , .a-second-section>.a-left-content>button:hover{
     scale: 105%;
 }
 .a-first-section>.a-left-content>.a-buttons>button:nth-child(2){
@@ -62,7 +62,57 @@
 }
 
 /* second section by yahya */
-
+.a-second-section{
+    display: flex;
+    width: 100%;
+    padding: 5vh 10vw;
+    gap: 3vw;
+}
+.a-second-section>.a-left-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+}
+.a-second-section>.a-left-content>h1{
+    font-size: 2.7em;
+    text-transform: capitalize;
+    color: rgb(39, 70, 132);
+    width: 80%;
+    font-weight: bold;
+}
+.a-second-section>.a-left-content>button{
+    background-color: rgb(255, 18, 47);
+    color: white;
+    width: 30%;
+    padding: 2vh 0.3vw;
+    border-radius: 30px;
+    border: none;
+    transition: 0.5s;
+}
+.a-second-section>.a-right-content{
+    width: 60%;
+    display: flex;
+    gap: 2vw;
+}
+.a-second-section>.a-right-content>div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2vh 2vw;
+}
+.a-second-section>.a-right-content>div>img{
+    width: 5vw;
+}
+.a-second-section>.a-right-content>div>h3{
+    color: rgb(47, 72, 133);
+    font-weight: bold;
+}
+.a-second-section>.a-right-content>div>p{
+    opacity: 0.7;
+}
 /* third section by yahya */
 
 /* footer style by youssef */
@@ -101,7 +151,33 @@
         width: 100%;
     }
     /* second section by yahya - responsive */
-
+    .a-second-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+    }
+    .a-second-section>.a-left-content{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    .a-second-section>.a-left-content>h1{
+        font-size: 2em;
+    }
+    .a-second-section>.a-left-content>button{
+        width: 60%;
+    }
+    .a-second-section>.a-right-content{
+        flex-direction: column;
+        width: 100%;
+        gap: 2vh;
+    }
+    .a-second-section>.a-right-content>div{
+        width: 100%;
+    }
+    .a-second-section>.a-right-content>div>img{
+        width: 15vw;
+    }
     /* third section by yahya - responsive */
 
     /* footer style by youssef - responsive */
